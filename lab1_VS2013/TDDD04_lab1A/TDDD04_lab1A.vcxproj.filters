@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="triangle.cpp" />
+    <ClCompile Include="InvalidTriangleException.cpp">
+      <Filter>CustomExceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="triangle.h" />
+    <ClInclude Include="InvalidTriangleException.h">
+      <Filter>CustomExceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CustomExceptions">
+      <UniqueIdentifier>{a1066a89-c044-453b-b4b1-5a2a0f944095}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{2f95695a-d42a-4bcb-a803-70eb5eb6ae49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

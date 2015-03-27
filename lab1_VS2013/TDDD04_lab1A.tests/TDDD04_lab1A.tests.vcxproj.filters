@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="TriangleTest.cpp" />
+    <ClCompile Include="..\TDDD04_lab1A\triangle.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TDDD04_lab1A\InvalidTriangleException.cpp">
+      <Filter>DOC</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ToStringMap.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUT">
+      <UniqueIdentifier>{03f6b12e-3360-4ce2-a21a-df3f36fdb0dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DOC">
+      <UniqueIdentifier>{8f0b27d3-2d8d-4212-91fc-72a783c423d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -10,7 +10,7 @@ namespace TDDD04_lab1Btests
 {		
 	TEST_CLASS(StringFormatterTest)
 	{
-		StringFormatter *formatter;
+		IStringFormatter *formatter;
 
 	public:
 		TEST_METHOD_INITIALIZE(setUp)
@@ -21,14 +21,71 @@ namespace TDDD04_lab1Btests
 		{
 			delete formatter;
 		}
-
-		TEST_METHOD(centerStringTest)
+		
+		TEST_METHOD(centerStringTestEven)
 		{
 			std::string result, expected;
 
-			result = formatter->centerString("EVEN", 3, '*');
-			expected = "VEN";
-			Assert::AreEqual(0, expected.compare(result));
+			result = formatter->centerString("even", 0, '*');
+			expected = "";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("even", 1, '*');
+			expected = "e";
+			Assert::AreEqual(result, expected);
+		
+			result = formatter->centerString("even", 2, '*');
+			expected = "ve";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("even", 3, '*');
+			expected = "ven";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("even", 4, '*');
+			expected = "even";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("even", 5, '*');
+			expected = "even*";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("even", 6, '*');
+			expected = "*even*";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("even", 7, '*');
+			expected = "*even**";
+			Assert::AreEqual(result, expected);
+		}
+
+		TEST_METHOD(centerStringTestOdd)
+		{
+			std::string result, expected;
+
+			result = formatter->centerString("odd", 0, '*');
+			expected = "";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("odd", 2, '*');
+			expected = "dd";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("odd", 3, '*');
+			expected = "odd";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("odd", 4, '*');
+			expected = "odd*";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("odd", 5, '*');
+			expected = "*odd*";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->centerString("odd", 6, '*');
+			expected = "*odd**";
+			Assert::AreEqual(result, expected);
 		}
 
 		TEST_METHOD(leftStringTest)
@@ -47,8 +104,8 @@ namespace TDDD04_lab1Btests
 			expected = "";
 			Assert::AreEqual(result, expected);
 
-			result = formatter->leftString("", 3, '-');
-			expected = "---";
+			result = formatter->leftString("left", 3, '-');
+			expected = "lef";
 			Assert::AreEqual(result, expected);
 		}
 
@@ -56,8 +113,20 @@ namespace TDDD04_lab1Btests
 		{
 			std::string result, expected;
 
-			result = formatter->centerString("Software", 4, '*');
-			expected = "ware";
+			result = formatter->rightString("testing", 10, '-');
+			expected = "---testing";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->rightString("even", 1, '-');
+			expected = "n";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->rightString("asd", 0, '-');
+			expected = "";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->rightString("right", 3, '-');
+			expected = "ght";
 			Assert::AreEqual(result, expected);
 		}
 

@@ -49,7 +49,7 @@ Triangle::TriangleType Triangle::getType(int sides[], int sides_length)
 		}
 		else
 		{
-			printf("");
+			;
 		}
 
 		if (s[0] > s[2])
@@ -58,7 +58,7 @@ Triangle::TriangleType Triangle::getType(int sides[], int sides_length)
 		}
 		else
 		{
-			printf("");
+			;
 		}
 
 		if (s[1] > s[2])
@@ -67,7 +67,7 @@ Triangle::TriangleType Triangle::getType(int sides[], int sides_length)
 		}
 		else
 		{
-			printf("");
+			;
 		}
 
 		if (s[0] <= 0 || s[2] - s[0] >= s[1])

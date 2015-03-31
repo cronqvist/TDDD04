@@ -28,15 +28,27 @@ namespace TDDD04_lab1Btests
 
 			result = formatter->centerString("EVEN", 3, '*');
 			expected = "VEN";
-			Assert::AreEqual(result, expected);
+			Assert::AreEqual(0, expected.compare(result));
 		}
 
 		TEST_METHOD(leftStringTest)
 		{
 			std::string result, expected;
 
-			result = formatter->centerString("testing", 10, '-');
+			result = formatter->leftString("testing", 10, '-');
 			expected = "testing---";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->leftString("even", 1, '-');
+			expected = "e";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->leftString("asd", 0, '-');
+			expected = "";
+			Assert::AreEqual(result, expected);
+
+			result = formatter->leftString("", 3, '-');
+			expected = "---";
 			Assert::AreEqual(result, expected);
 		}
 

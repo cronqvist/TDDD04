@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="TDDD04_lab1Btests::StringFormatterTest::centerStringTestOdd" /><Add Test="TDDD04_lab1Btests::StringFormatterTest::leftStringTest" /><Add Test="TDDD04_lab1Btests::StringFormatterTest::centerStringTestEven" /><Add Test="TDDD04_lab1Btests::StringFormatterTest::rightStringTest" /></Playlist>

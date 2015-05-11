@@ -49,7 +49,7 @@ Triangle::TriangleType Triangle::getType(int sides[], int sides_length)
 		}
 		else
 		{
-			;
+			printf("");
 		}
 
 		if (s[0] > s[2])
@@ -58,7 +58,7 @@ Triangle::TriangleType Triangle::getType(int sides[], int sides_length)
 		}
 		else
 		{
-			;
+			printf("");
 		}
 
 		if (s[1] > s[2])
@@ -67,10 +67,14 @@ Triangle::TriangleType Triangle::getType(int sides[], int sides_length)
 		}
 		else
 		{
-			;
+			printf("");
 		}
 
-		if (s[0] <= 0 || s[2] - s[0] >= s[1])
+		if (s[0] <= 0)
+		{
+			throw InvalidTriangleException();
+		}
+		if (s[2] - s[0] >= s[1])
 		{
 			throw InvalidTriangleException();
 		}
@@ -79,7 +83,11 @@ Triangle::TriangleType Triangle::getType(int sides[], int sides_length)
 		{
 			result = EQUILATERAL;
 		}
-		else if (s[0] == s[1] || s[1] == s[2])
+		else if (s[0] == s[1])
+		{
+			result = ISOSCELES;
+		}
+		else if (s[1] == s[2])
 		{
 			result = ISOSCELES;
 		}

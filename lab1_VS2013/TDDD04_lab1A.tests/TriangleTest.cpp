@@ -11,6 +11,7 @@ namespace TraingleTest
 {		
 	TEST_CLASS(TraingleTest)
 	{
+
 		Triangle *_triangle;
 	public:
 		TEST_METHOD_INITIALIZE(setUp)
@@ -21,6 +22,7 @@ namespace TraingleTest
 		{
 			delete _triangle;
 		}
+
 		TEST_METHOD(testEquilateral)
 		{
 			int sides[3] = { 3, 3, 3 };
@@ -69,6 +71,10 @@ namespace TraingleTest
 			int sides[3] = { 3, 2, 2 };
 
 			Assert::AreEqual(Triangle::ISOSCELES, _triangle->getType(sides, 3), L"Trangle is not isosceles");
+
+
+			int sides2[3] = { 2, 3, 3 };
+			Assert::AreEqual(Triangle::ISOSCELES, _triangle->getType(sides2, 3), L"Trangle is not isosceles");
 		}
 
 		TEST_METHOD(testScaleneTriangle)
@@ -93,6 +99,13 @@ namespace TraingleTest
 			Assert::ExpectException<InvalidTriangleException>([&]
 			{
 				_triangle->getType(sides, 2);
+			});
+
+			int sides2[3] = { 1, 9, 10 };
+
+			Assert::ExpectException<InvalidTriangleException>([&]
+			{
+				_triangle->getType(sides2, 3);
 			});
 		}
 

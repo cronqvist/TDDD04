@@ -99,6 +99,7 @@
     <ClCompile Include="..\BlackLagoon\TileSprites.cpp">
       <Filter>CUT</Filter>
     </ClCompile>
+    <ClCompile Include="PlayerAITests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />

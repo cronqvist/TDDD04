@@ -16,8 +16,6 @@ namespace BlackLagoontests
 
 		TEST_METHOD_INITIALIZE(setUp)
 		{
-			hgeSprite* sprite;
-
 			_player = new Player();
 		}
 		TEST_METHOD_CLEANUP(tearDown)

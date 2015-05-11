@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2076562D-7DFE-4F9B-BDBE-8530E24C7F8D}</ProjectGuid>
+    <RootNamespace>Black Lagoon</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)hge181\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>hge.lib;hgehelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)hge181\lib\vc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" "$(OutDir)..\Game\$(ProjectName).exe"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)hge181\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>hge.lib;hgehelp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(TargetPath)</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)hge181\lib\vc;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" "$(OutDir)..\Game\$(ProjectName).exe"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Ammo.h" />
+    <ClInclude Include="ApplicationBuilder.h" />
+    <ClInclude Include="BasicGameObject.h" />
+    <ClInclude Include="Coordinate.h" />
+    <ClInclude Include="CreditComponent.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectFactory.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="GameObjectTypeDefinitions.h" />
+    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="GameWorldEventLevelUp.h" />
+    <ClInclude Include="GameWorldEventPlayerDied.h" />
+    <ClInclude Include="GunBoat.h" />
+    <ClInclude Include="GunBoatAI.h" />
+    <ClInclude Include="GunTurret.h" />
+    <ClInclude Include="GunTurretAI.h" />
+    <ClInclude Include="HealthPackage.h" />
+    <ClInclude Include="HgeInputDevice.h" />
+    <ClInclude Include="HighScoreComponent.h" />
+    <ClInclude Include="IAI.h" />
+    <ClInclude Include="ICreditComponent.h" />
+    <ClInclude Include="IGameObjectFactory.h" />
+    <ClInclude Include="IGameObjectManager.h" />
+    <ClInclude Include="IGameWorld.h" />
+    <ClInclude Include="IGameWorldEvent.h" />
+    <ClInclude Include="IHighScoreComponent.h" />
+    <ClInclude Include="IInputDevice.h" />
+    <ClInclude Include="ILevelManager.h" />
+    <ClInclude Include="IMenuComponent.h" />
+    <ClInclude Include="IPhysicsComponent.h" />
+    <ClInclude Include="IScoreComponent.h" />
+    <ClInclude Include="ITerrainManager.h" />
+    <ClInclude Include="ITerrainTileTypes.h" />
+    <ClInclude Include="ITileSprites.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="Mark.h" />
+    <ClInclude Include="MenuComponent.h" />
+    <ClInclude Include="Money.h" />
+    <ClInclude Include="PhysicsComponent.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerAI.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="ScoreComponent.h" />
+    <ClInclude Include="Shot.h" />
+    <ClInclude Include="SpecialGameObject.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TerrainManager.h" />
+    <ClInclude Include="TerrainTile.h" />
+    <ClInclude Include="TerrainTileTypes.h" />
+    <ClInclude Include="TileSprites.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ammo.cpp" />
+    <ClCompile Include="ApplicationBuilder.cpp" />
+    <ClCompile Include="BasicGameObject.cpp" />
+    <ClCompile Include="CreditComponent.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectFactory.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="GameWorldEventLevelUp.cpp" />
+    <ClCompile Include="GameWorldEventPlayerDied.cpp" />
+    <ClCompile Include="GunBoat.cpp" />
+    <ClCompile Include="GunBoatAI.cpp" />
+    <ClCompile Include="GunTurret.cpp" />
+    <ClCompile Include="GunTurretAI.cpp" />
+    <ClCompile Include="HealthPackage.cpp" />
+    <ClCompile Include="HelpFunctions.cpp" />
+    <ClCompile Include="HgeInputDevice.cpp" />
+    <ClCompile Include="HighScoreComponent.cpp" />
+    <ClCompile Include="IAI.cpp" />
+    <ClCompile Include="LevelManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mark.cpp" />
+    <ClCompile Include="MenuComponent.cpp" />
+    <ClCompile Include="Money.cpp" />
+    <ClCompile Include="PhysicsComponent.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerAI.cpp" />
+    <ClCompile Include="ScoreComponent.cpp" />
+    <ClCompile Include="Shot.cpp" />
+    <ClCompile Include="TerrainManager.cpp" />
+    <ClCompile Include="TerrainTile.cpp" />
+    <ClCompile Include="TileSprites.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Black_Lagoon_class_diagram.cd" />
+    <None Include="Game\highscore.txt" />
+    <CustomBuildStep Include="Game\levels\level.lev">
+      <FileType>Document</FileType>
+    </CustomBuildStep>
+    <None Include="readme.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\BlackLagoon\Player.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTests.cpp" />
+    <ClCompile Include="..\BlackLagoon\Shot.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\Ammo.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\ApplicationBuilder.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\BasicGameObject.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\CreditComponent.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\Game.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GameObject.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GameObjectFactory.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GameObjectManager.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GameWorld.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GameWorldEventLevelUp.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GameWorldEventPlayerDied.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GunBoat.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GunBoatAI.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GunTurret.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\GunTurretAI.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\HealthPackage.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\HelpFunctions.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\HgeInputDevice.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\HighScoreComponent.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\IAI.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\LevelManager.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\Mark.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\MenuComponent.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\Money.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\PhysicsComponent.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\PlayerAI.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\ScoreComponent.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\TerrainManager.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\TerrainTile.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BlackLagoon\TileSprites.cpp">
+      <Filter>CUT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CUT">
+      <UniqueIdentifier>{0cb537c3-8e04-4bfb-80f9-b4fc5577ffca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DOC">
+      <UniqueIdentifier>{0166f8d9-4876-4c8c-9f9d-0c804bd72826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a01c08fd-9eb1-41d8-839d-4ca3ab2c0b95}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

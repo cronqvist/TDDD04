@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Ammo" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACABBAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ammo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationBuilder" Collapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FA4kqCBCARAAgKWAJQkZgLRBAYIAABAAgCMAEAAAQgA=</HashCode>
+      <FileName>ApplicationBuilder.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicGameObject" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQIIAABDAABCCAADAIAEEiSQAEABQAAABAAAEQCAA=</HashCode>
+      <FileName>BasicGameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreditComponent" Collapsed="true">
+    <Position X="6.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAgAAAAAAAAAgAAABAQAAA=</HashCode>
+      <FileName>CreditComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game">
+    <Position X="16.75" Y="4.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Game::States">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BIAAEggIIAALAiAQABRKAAAUIAiAAUAAIEHBQQABAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ADBQCAAAAAAAAAEAAAAAAAAAABABAAAABAAAIBIAAAA=</HashCode>
+      <FileName>GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObjectFactory" Collapsed="true">
+    <Position X="3.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAIAIAAAMCAQAgIAAAAAAAAIAAAAAgAgQCBAAAAAA=</HashCode>
+      <FileName>GameObjectFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObjectManager" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAKQQAAkAAAFAQAIAchEAAAJAAECCAAACANCBACQCAA=</HashCode>
+      <FileName>GameObjectManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWorld" Collapsed="true">
+    <Position X="12.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABskAEOBAAAAAIIAEQBAGgAAgEABADSIAACAgIQAGA=</HashCode>
+      <FileName>GameWorld.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWorldEventLevelUp" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAgAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAIAAAAA=</HashCode>
+      <FileName>GameWorldEventLevelUp.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameWorldEventPlayerDied" Collapsed="true">
+    <Position X="2.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAgAAAACAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>GameWorldEventPlayerDied.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GunBoat" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gABAEAAAAAAAAACAAAAAAEADCgABAACABAAAAAAQAAA=</HashCode>
+      <FileName>GunBoat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GunBoatAI" Collapsed="true">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAACAAAAAAAAAAAAAAAABAAABAAAAAAAAAA=</HashCode>
+      <FileName>GunBoatAI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GunTurret" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAAAAABAAAAA=</HashCode>
+      <FileName>GunTurret.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GunTurretAI" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAAAAAAAAAIEAAAQAAAAAgAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>GunTurretAI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthPackage" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIABBAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HealthPackage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HgeInputDevice" Collapsed="true">
+    <Position X="11.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAIAAQACAAAAABQAAAAAAACIAABABABAAiJAoAA=</HashCode>
+      <FileName>HgeInputDevice.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighScoreComponent" Collapsed="true">
+    <Position X="12.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgAAAABIIABEAAABACIAEAhACAAAAAAAAgAZAAQAAA=</HashCode>
+      <FileName>HighScoreComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IAI" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAEAAAAAABAAAAAEAAAAAAAAAAAABAAAAAgAAAA=</HashCode>
+      <FileName>IAI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ICreditComponent" Collapsed="true">
+    <Position X="6.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ICreditComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGameObjectFactory" Collapsed="true">
+    <Position X="3.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAIAAAAAAQAgAAAAgAAAAAAAAAAAAAACBAAAAAA=</HashCode>
+      <FileName>IGameObjectFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGameObjectManager" Collapsed="true">
+    <Position X="0.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAKQQAAkAAABAQAAAUhAAAAAAAECCAAAAABCBAAQAAA=</HashCode>
+      <FileName>IGameObjectManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGameWorld" Collapsed="true">
+    <Position X="12.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAkAAAAAAAAAAQAACgAAgAAAACAAAAAAgAQAAA=</HashCode>
+      <FileName>IGameWorld.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGameWorldEvent" Collapsed="true">
+    <Position X="1.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>IGameWorldEvent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IHighScoreComponent" Collapsed="true">
+    <Position X="12.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAABAAAAAAAAAAAIAAAAACAAAAAAAAgABAAQAAA=</HashCode>
+      <FileName>IHighScoreComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IInputDevice" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAIAAQACAAACABAAAAAAAACIAABABABAAiIAsAA=</HashCode>
+      <FileName>IInputDevice.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ILevelManager" Collapsed="true">
+    <Position X="9.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAABAAACUAAAAAAAAAARAAAAAAAAAQAAA=</HashCode>
+      <FileName>ILevelManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMenuComponent" Collapsed="true">
+    <Position X="6.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAIAEAAAAAAAAABAAAAAAAIQAAA=</HashCode>
+      <FileName>IMenuComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPhysicsComponent" Collapsed="true">
+    <Position X="3.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>IPhysicsComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IScoreComponent" Collapsed="true">
+    <Position X="0.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEEAAAAAAAAAAAAAAAAAEAAQCAAAAIAAEQIAI=</HashCode>
+      <FileName>IScoreComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ITerrainManager" Collapsed="true">
+    <Position X="8.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACABAAAAAAEAAAAAAAAAAAIABAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>ITerrainManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ITerrainTileTypes" Collapsed="true">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAgAAAAAgAAAAAAAACAAA=</HashCode>
+      <FileName>ITerrainTileTypes.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ITileSprites" Collapsed="true">
+    <Position X="5.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sAAAAABAAAQAACAAAAASABAAgAAAAAAAAAAgAACAAAA=</HashCode>
+      <FileName>ITileSprites.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelManager" Collapsed="true">
+    <Position X="9.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAgAABAAAQWAAAAhCAAAARAAAAAAYAgQAAA=</HashCode>
+      <FileName>LevelManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mark" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Mark.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuComponent" Collapsed="true">
+    <Position X="6.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEIAABAQgABAIAAAAgAAAAAABAAAAAAAIQCAA=</HashCode>
+      <FileName>MenuComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Money" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Money.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhysicsComponent" Collapsed="true">
+    <Position X="3.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEgAAAABAAACAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>PhysicsComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAABAAAABAAAAQAAABA=</HashCode>
+      <FileName>Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAI" Collapsed="true">
+    <Position X="5.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAQAAAAAAAAAAAAgAQBAAAAAAAAAA=</HashCode>
+      <FileName>PlayerAI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScoreComponent" Collapsed="true">
+    <Position X="0.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAEMAAAQAAAAAAEAAAwAAEAAQCAAEAAAAEQIAI=</HashCode>
+      <FileName>ScoreComponent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shot" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAYAgAAAAAAQAAAAAA=</HashCode>
+      <FileName>Shot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecialGameObject" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>SpecialGameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrainManager" Collapsed="true">
+    <Position X="8.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAKQBAAAAAAAARAAAAgAAAAIABBACAAAAAAAEQAIA=</HashCode>
+      <FileName>TerrainManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrainTile" Collapsed="true">
+    <Position X="14.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAgAAAAEAAIAAgAAAAAAAAAAQAAAEQAAA=</HashCode>
+      <FileName>TerrainTile.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerrainTileTypes" Collapsed="true">
+    <Position X="8.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAgQAAAAgAAAgAgAAAAgAAAAABA=</HashCode>
+      <FileName>TerrainTileTypes.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TileSprites" Collapsed="true">
+    <Position X="5.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>sCAAAABAAAQAACAAAAgQABAAgAAAAAAQAAAiQACAAAA=</HashCode>
+      <FileName>TileSprites.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geometric::Coordinate&lt;T&gt;" Collapsed="true">
+    <Position X="12.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgCAAAAAAAAABAAAUAEAAQAAAAAAAAAACABgAAAAAAA=</HashCode>
+      <FileName>Coordinate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="geometric::Rectangle&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hACAAAAAAAAAAAAAAACAIQAAAAAgAAAACQAAAAIAEAA=</HashCode>
+      <FileName>Rectangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Typedef Name="CoordType" Collapsed="true">
+    <Position X="14.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>stdafx.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Coord" Collapsed="true">
+    <Position X="12.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>stdafx.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Rect" Collapsed="true">
+    <Position X="9.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>stdafx.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

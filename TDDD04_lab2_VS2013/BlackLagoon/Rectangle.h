@@ -149,7 +149,7 @@ namespace geometric {
 	{
 		if ((rectangle.topLeft().x < m_bottomRight.x) &&
 			(rectangle.topLeft().y < m_bottomRight.y) &&
-			(rectangle.bottomRight().x > m_bottomRight.x) &&
+			(rectangle.bottomRight().x > m_topLeft.x) &&
 			(rectangle.bottomRight().y > m_topLeft.y))
 			return true;
 

@@ -94,6 +94,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\BlackLagoon\Rectangle.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -131,6 +132,7 @@
     <ClCompile Include="..\BlackLagoon\TerrainTile.cpp" />
     <ClCompile Include="..\BlackLagoon\TileSprites.cpp" />
     <ClCompile Include="PlayerAITests.cpp" />
+    <ClCompile Include="RectangleTests.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

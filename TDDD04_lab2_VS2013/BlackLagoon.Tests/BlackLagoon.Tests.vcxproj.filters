@@ -100,10 +100,14 @@
       <Filter>CUT</Filter>
     </ClCompile>
     <ClCompile Include="PlayerAITests.cpp" />
+    <ClCompile Include="RectangleTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\BlackLagoon\Rectangle.h">
+      <Filter>CUT</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CUT">

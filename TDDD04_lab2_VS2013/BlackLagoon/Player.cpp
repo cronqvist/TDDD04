@@ -26,6 +26,7 @@ void Player::setNewShot(Shot* shot)
 	shot->setVelocity(CreateVectorFromAngle(this->getRotation(), 1));
 	shot->setSpeed(PLAYER_SHOT_TOP_SPEED);
 	shot->setRotation(this->getRotation());
+	Ammo--;
 }
 
 bool Player::fire(float deltaTime)

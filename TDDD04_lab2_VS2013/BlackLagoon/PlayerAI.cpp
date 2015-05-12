@@ -24,7 +24,7 @@ void PlayerAI::tick(GameObject* go, float deltaTime, IGameObjectManager* gom)
 
 	if(m_input->down())
 	{
-		go->setVelocity(go->getVelocity() + hgeVector(0, 0));
+		go->setVelocity(go->getVelocity() + hgeVector(0, PLAYER_ACCELERATION));
 	}
 	if(m_input->up())
 	{
@@ -36,7 +36,7 @@ void PlayerAI::tick(GameObject* go, float deltaTime, IGameObjectManager* gom)
 	}
 	if(m_input->right())
 	{
-		go->setVelocity(go->getVelocity() + hgeVector(-PLAYER_ACCELERATION,0));
+		go->setVelocity(go->getVelocity() + hgeVector(PLAYER_ACCELERATION,0));
 	}
 
 	if(m_input->down2())

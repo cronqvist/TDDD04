@@ -195,6 +195,7 @@ void GameWorld::physicsSimulation(float deltaTime)
 			//PLAYER DEAD
 			if (player->isDead())
 			{
+				m_eventPlayerDied->run();
 				return;
 			}
 		}

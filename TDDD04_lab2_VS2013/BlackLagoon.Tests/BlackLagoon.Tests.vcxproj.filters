@@ -101,6 +101,7 @@
     </ClCompile>
     <ClCompile Include="PlayerAITests.cpp" />
     <ClCompile Include="RectangleTests.cpp" />
+    <ClCompile Include="GameWorldTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />

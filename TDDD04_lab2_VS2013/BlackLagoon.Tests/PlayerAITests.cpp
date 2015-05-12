@@ -41,7 +41,7 @@ namespace BlackLagoontests
 
 	};
 
-	TEST_CLASS(PlayerTests)
+	TEST_CLASS(PlayerAITests)
 	{
 		PlayerAI* _playerAI;
 		TestInputDevice* _inputDevice;

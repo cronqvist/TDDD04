@@ -131,6 +131,7 @@
     <ClCompile Include="..\BlackLagoon\TerrainManager.cpp" />
     <ClCompile Include="..\BlackLagoon\TerrainTile.cpp" />
     <ClCompile Include="..\BlackLagoon\TileSprites.cpp" />
+    <ClCompile Include="GameWorldTests.cpp" />
     <ClCompile Include="PlayerAITests.cpp" />
     <ClCompile Include="RectangleTests.cpp" />
     <ClCompile Include="stdafx.cpp">

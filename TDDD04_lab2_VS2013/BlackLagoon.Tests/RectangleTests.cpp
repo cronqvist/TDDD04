@@ -7,7 +7,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace BlackLagoontests
 {
-	TEST_CLASS(PlayerTests)
+	TEST_CLASS(RectangleTests)
 	{
 
 	public:
@@ -36,6 +36,5 @@ namespace BlackLagoontests
 			result = _rect1->overlap(*_rect2);
 			Assert::AreEqual(true, result, L"Rectangle should overlap but did not");
 		}
-
 	};
 }

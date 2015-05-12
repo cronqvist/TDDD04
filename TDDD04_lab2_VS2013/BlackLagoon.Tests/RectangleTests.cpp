@@ -22,8 +22,8 @@ namespace BlackLagoontests
 
 		TEST_METHOD_CLEANUP(tearDown)
 		{
-			//delete _rect1;
-			//delete _rect2;
+			delete _rect1;
+			delete _rect2;
 		}
 
 		TEST_METHOD(testRectangleOverlapFromRight)

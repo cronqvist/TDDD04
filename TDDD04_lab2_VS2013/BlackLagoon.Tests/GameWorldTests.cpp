@@ -12,67 +12,60 @@
 #include "TerrainTileTypes.h"
 #include "TileSprites.h"
 
+#include <memory>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace BlackLagoontests
-{
-	class TestInputDevice
-		: public IInputDevice
-	{
+namespace BlackLagoontests {
+
+	class TestInputDevice final : public IInputDevice {
 	public:
-		bool left() { return _left; }
-		bool right() { return _right; }
-		bool up() { return _up; }
-		bool down() { return _down; }
+		bool left() override { return _left; }
+		bool right() override { return _right; }
+		bool up() override { return _up; }
+		bool down() override { return _down; }
 
-		bool turnLeft() { return false; }
-		bool turnRight() { return false; }
-		bool fire() { return false; }
+		bool turnLeft() override { return false; }
+		bool turnRight() override { return false; }
+		bool fire() override { return false; }
 
-		bool left2() { return false; }
-		bool right2() { return false; }
-		bool up2() { return false; }
-		bool down2() { return false; }
+		bool left2() override { return false; }
+		bool right2() override { return false; }
+		bool up2() override { return false; }
+		bool down2() override { return false; }
 
-		bool select() { return false; }
-		bool next() { return false; }
-		bool previously() { return false; }
-		bool pause() { return false; }
-		bool displayInfo() { return false; }
-		bool exit() { return false; }
+		bool select() override { return false; }
+		bool next() override { return false; }
+		bool previously() override { return false; }
+		bool pause() override { return false; }
+		bool displayInfo() override { return false; }
+		bool exit() override { return false; }
 
 		bool _left = false;
 		bool _right = false;
 		bool _up = false;
 		bool _down = false;
-
 	};
 
-	class GameWordEventTest : public IGameWorldEvent
-	{
+	class BasicGameWorldEvent final : public IGameWorldEvent {
 	public:
-		void run()
-		{ 
-			_eventRunned = true;
-		}
-
-		bool _eventRunned = false;
+		void run() override { _eventDidRun = true; }
+		const bool eventDidRun() const { return _eventDidRun; }
+	private:
+		bool _eventDidRun = false;
 	};
 
-	TEST_CLASS(GameWorldTests)
-	{
+	TEST_CLASS(GameWorldTests) {
 
-		GameWordEventTest* playerDeadEvent;
-		GameWorld* world;
+		BasicGameWorldEvent* playerDeadEvent;
+		IGameWorld* world;
 		IGameObjectManager* manager;
 
 	public:
 
-		TEST_METHOD_INITIALIZE(setUp)
-		{
-			playerDeadEvent = new GameWordEventTest();
-
+		TEST_METHOD_INITIALIZE(setUp) {
+			playerDeadEvent = new BasicGameWorldEvent();
+			
 			IGameObjectFactory* factory = new GameObjectFactory(NULL);
 			IScoreComponent* component = new ScoreComponent(NULL, NULL);
 			manager = new GameObjectManager(factory);
@@ -82,16 +75,17 @@ namespace BlackLagoontests
 			ITileSprites* sprites = new TileSprites(0, 1, 1, 1, 1);
 			ITerrainTileTypes* tiles = new TerrainTileTypes(sprites);
 			ITerrainManager* terrain = new TerrainManager(tiles);
-
+			
 			world = new GameWorld(playerDeadEvent, NULL, manager, physics, component, terrain, NULL, Rect());
 		}
 
-		TEST_METHOD_CLEANUP(tearDown)
-		{
+		TEST_METHOD_CLEANUP(tearDown) {
+			delete world;
+			delete manager;
+			delete playerDeadEvent;
 		}
 
-		TEST_METHOD(physicsSimulationRaiseDeadEventTest)
-		{
+		TEST_METHOD(physicsSimulationDidRaiseDeadEvent) {
 			IInputDevice* input = new TestInputDevice();
 
 			manager->addPlayer(input);
@@ -99,11 +93,12 @@ namespace BlackLagoontests
 
 			world->tick(1);
 
-			Assert::AreEqual(true, playerDeadEvent->_eventRunned, L"Event did not run");
+			Assert::IsTrue(playerDeadEvent->eventDidRun(), L"Event did not run");
+			
+			delete input;
 		}
 
-		TEST_METHOD(physicsSimulationNotRaiseDeadEventTest)
-		{
+		TEST_METHOD(physicsSimulationDidNotRaiseDeadEvent) {
 			IInputDevice* input = new TestInputDevice();
 
 			manager->addPlayer(input);
@@ -111,7 +106,9 @@ namespace BlackLagoontests
 
 			world->tick(1);
 
-			Assert::AreEqual(false, playerDeadEvent->_eventRunned, L"Event did run when it should not");
+			Assert::IsFalse(playerDeadEvent->eventDidRun(), L"Event did run when it should not");
+		
+			delete input;
 		}
 	};
 }

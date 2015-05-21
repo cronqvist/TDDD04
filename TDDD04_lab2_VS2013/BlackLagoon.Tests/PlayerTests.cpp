@@ -6,32 +6,29 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace BlackLagoontests
-{		
-	TEST_CLASS(PlayerTests)
-	{
+namespace BlackLagoontests {
+
+	TEST_CLASS(PlayerTests) {
+
 		Player* _player;
 
 	public:
 
-		TEST_METHOD_INITIALIZE(setUp)
-		{
+		TEST_METHOD_INITIALIZE(setUp) {
 			_player = new Player();
 		}
-		TEST_METHOD_CLEANUP(tearDown)
-		{
+
+		TEST_METHOD_CLEANUP(tearDown) {
 			delete _player;
 		}
 		
-		TEST_METHOD(testAmmoDecreaseWhenFire)
-		{
+		TEST_METHOD(ammoDecreaseWhenFire) {
 			HTEXTURE texture = 0;
-			hgeSprite* sprite = new hgeSprite(texture, 0, 0, 0, 0);
-			Shot* shot = new Shot(sprite);
+			hgeSprite sprite(texture, 0, 0, 0, 0);
+			Shot shot(&sprite);
 
 			_player->Ammo = 100;
-
-			_player->setNewShot(shot);
+			_player->setNewShot(&shot);
 
 			Assert::AreEqual(99, _player->Ammo, L"Ammo count did not decrease");
 		}
